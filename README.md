@@ -9,11 +9,11 @@ After searching for solutions on the website and experimenting with the code, I 
 To make it more convenient for myself and others in the future, I am compiling some useful resources here.
 
 There are 5 datasets used in the project:
-- CelebA
-- CUB
-- DeepFashion
-- Taichi
-- Human3.6m
+1. CelebA
+2. CUB
+3. DeepFashion
+4. Taichi
+5. Human3.6m
 
 ## CelebA
 
