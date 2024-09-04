@@ -9,63 +9,8 @@ After searching for solutions on the website and experimenting with the code, I 
 To make it more convenient for myself and others in the future, I am compiling some useful resources here.
 
 There are 5 datasets used in the project:
-1. CelebA
-2. CUB
-3. DeepFashion
-4. Taichi
-5. Human3.6m
-
-## CelebA
-
-## CUB
-
-## DeepFashion
-
-
-
-## Taichi
-
-Taichi is a video dataset.
-
-Previous researchers preprocessed the dataset for keypoints learning.
-
-The preprocessed dataset is an image dataset, containing 5000 images for training and 300 images for testing.
-
-The images can be downloaded from the google drive:
-
-https://drive.google.com/drive/folders/18l3W4tkYWnpPcwMMhy07Tc6R7Ky_ouoJ?usp=sharing
-
-![image](https://github.com/user-attachments/assets/b56c8048-4319-4b84-bb91-ad5ee378a826)
-
-And use the `eval_images.tar.gz`
-
-After unzip, we can use the train and test data here:
-
-![image](https://github.com/user-attachments/assets/494e889a-2aad-4057-933e-7e7270cf62a2)
-
-The landmarks data is in this project:
-
-https://github.com/AliaksandrSiarohin/motion-cosegmentation/tree/master/landmarks
-
-## Human3.6m
-
-Human3.6m is a large datset and needs edu email and need check and get permission.
-
-The recommended way is to directly download it:
-
-```
-wget http://visiondata.cis.upenn.edu/volumetric/h36m/h36m_annot.tar
-tar -xf h36m_annot.tar
-rm h36m_annot.tar
-
-# Download H36M images
-mkdir -p h36m/images
-cd h36m/images
-wget http://visiondata.cis.upenn.edu/volumetric/h36m/S1.tar
-tar -xf S1.tar
-rm S1.tar
-wget http://visiondata.cis.upenn.edu/volumetric/h36m/S5.tar
-tar -xf S5.tar
-...
-S6, S7, S8, S9, S11
-```
+1. [CelebA](1-celeba)
+2. [CUB](2-cub)
+3. [DeepFashion](3-deepfashion)
+4. [Taichi](4-taichi)
+5. [Human3.6m](5-human36m)
