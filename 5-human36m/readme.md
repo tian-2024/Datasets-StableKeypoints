@@ -1,6 +1,20 @@
 # Human3.6M Dataset
 
-Human3.6m is a large datset and needs edu email and need check and get permission.
+The project doesn't use the original Human3.6m dataset.
+
+It uses the simplfied dataset, which can be downloaded from the Google Drive following link:
+
+https://drive.google.com/file/d/1dzuIWfNBxvIFHPdB7_JLiwALYNKeZHtV/view?usp=drive_link
+
+
+
+## Original Human3.6m Dataset
+
+Firstly, I downloaded the original Human3.6m dataset, but found it lacks landmarks annotations.
+
+And the original dataset is too large, which is not convenient for downloading and using.
+
+It needs edu email and need check and get permission.
 
 The recommended way is to directly download it:
 
