@@ -8,7 +8,7 @@ User guide of the 5 datasets used in [StableKeypoints](https://github.com/ubc-vi
 5. [Human3.6m](5-human36m)
 
 
-## Further Information
+## Background
 
 Recently, I came across an intriguing project called StableKeypoints, which was published at CVPR 2024.
 
