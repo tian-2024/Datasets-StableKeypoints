@@ -1,22 +1,16 @@
 # Human3.6M Dataset
 
-The project doesn't use the original Human3.6m dataset.
-
-It uses the simplfied dataset, which can be downloaded from the Google Drive following link:
+Just need to download the dataset from the Google Drive link and extract:
 
 https://drive.google.com/file/d/1dzuIWfNBxvIFHPdB7_JLiwALYNKeZHtV/view?usp=drive_link
 
+## Background
 
+Firstly, I downloaded the original Human3.6m dataset.
 
-## Original Human3.6m Dataset
+The original dataset is large and it needs edu email and need check and get permission for downloading.
 
-Firstly, I downloaded the original Human3.6m dataset, but found it lacks landmarks annotations.
-
-And the original dataset is too large, which is not convenient for downloading and using.
-
-It needs edu email and need check and get permission.
-
-The recommended way is to directly download it:
+The simple way is to directly download it:
 
 ```
 wget http://visiondata.cis.upenn.edu/volumetric/h36m/h36m_annot.tar
@@ -34,3 +28,15 @@ tar -xf S5.tar
 ...
 S6, S7, S8, S9, S11
 ```
+
+
+After these steps, I found it lacks landmarks annotations and I can't run the code.
+
+Then I found that the project doesn't use the original Human3.6m dataset.
+
+It uses the dataset from the following link:
+
+https://github.com/YutingZhang/lmdis-rep
+
+The lmdis-rep project provides a simplfied dataset, which can be downloaded from the Google Drive I provided at the beginning.
+
