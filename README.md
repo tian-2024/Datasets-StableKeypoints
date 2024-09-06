@@ -40,12 +40,17 @@ In practical experiments, the time consuming for optimization embedding about 20
 
 ## dataset size
 
-celeba_aligned train: 19000 test: 1000
-celeba_wild train: 5379 test: 283
-cub_aligned train: 5964 test: 2874
-taichi train: 5000 test: 300
-human3.6m train: 796648 test: 87975
-deepfashion train: 10604 test: 1179
+- celeba_aligned train: 19000 test: 1000
+- celeba_wild train: 5379 test: 283
+- cub_aligned train: 5964 test: 2874
+- cub_001 train: 29 test: 17
+- cub_002 train: 30 test: 14
+- cub_003 train: 30 test: 15
+- cub_all train: 5964 test: 2874
+- taichi train: 5000 test: 300
+- human3.6m train: 796648 test: 87975
+- unaligned_human3.6m train: 159444 test: 17615
+- deepfashion train: 10604 test: 1179
 
 ## Time Consuming for Precomputing keypoints
 
@@ -68,8 +73,8 @@ The iteration is exactly on len(test dataset).
 
 So it will totally depends on the size of the test dataset.
 
-- celeba: 1.5 seconds / 19000 images
-- cub: xx seconds 
-- deepfashion: 0.5 seconds / 10604 images
-- human36m: 22 hou seconds
-- taichi: 0.1 seconds / 5000 images
+- celeba: 
+- cub: 
+- deepfashion: 
+- human36m: 
+- taichi: 452seconds / 300 images
