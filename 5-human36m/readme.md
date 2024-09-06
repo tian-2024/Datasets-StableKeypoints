@@ -4,9 +4,13 @@ Just need to download the dataset from the Google Drive link and extract:
 
 https://drive.google.com/file/d/1dzuIWfNBxvIFHPdB7_JLiwALYNKeZHtV/view?usp=drive_link
 
-## Background
 
-Firstly, I downloaded the original Human3.6m dataset.
+
+
+## Unalinged dataset
+
+download and unzip the dataset:
+the original Human3.6m dataset.
 
 The original dataset is large and it needs edu email and need check and get permission for downloading.
 
@@ -30,13 +34,27 @@ S6, S7, S8, S9, S11
 ```
 
 
+move_data.sh:
+```
+target=S9
+mkdir ${target}
+mv ${target}_Directions* ${target}/
+mv ${target}_Discussion* ${target}/
+mv ${target}_Posing* ${target}/
+mv ${target}_Waiting* ${target}/
+mv ${target}_Greeting* ${target}/
+mv ${target}_Walking* ${target}/
+```
+
+## Background
+
+
 After these steps, I found it lacks landmarks annotations and I can't run the code.
 
-Then I found that the project doesn't use the original Human3.6m dataset.
+Then I found that The project doesn't use the original Human3.6m dataset.
 
 It uses the dataset from the following link:
 
 https://github.com/YutingZhang/lmdis-rep
 
 The lmdis-rep project provides a simplfied dataset, which can be downloaded from the Google Drive I provided at the beginning.
-
