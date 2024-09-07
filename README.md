@@ -64,13 +64,13 @@ And max_num_points is 50000.
 
 Different datasets have different sizes, so the iteration numbers may vary.
 
-| Dataset     | Time      | Images                                |
-| ----------- | --------- | ------------------------------------- |
-| taichi      | 2 hours   | 5000 images                           |
-| cub         | 4 hours   | 5964 images                           |
-| deepfashion | 7 hours   | 10604 images                          |
-| celeba      | 9.3 hours | 19000 images                          |
-| human36m    | 22 hours  | 50000 images (actually 796648 images) |
+| Dataset     | Time      | Images                   |
+| ----------- | --------- | ------------------------ |
+| taichi      | 2 hours   | 5000                     |
+| cub         | 4 hours   | 5964                     |
+| deepfashion | 7 hours   | 10604                    |
+| celeba      | 9.3 hours | 19000                    |
+| human36m    | 22 hours  | 50000  (actually 796648) |
 
 
 ## Time Consuming for evaluating
@@ -79,10 +79,10 @@ The iteration is exactly on len(test dataset).
 
 So it will totally depends on the size of the test dataset.
 
-| Dataset     | Time      | Images      |
-| ----------- | --------- | ----------- |
-| taichi      | 0.1 hours | 300 images  |
-| celeba      | 0.5 hours | 1000 images |
-| deepfashion | 1 hour    | 1179 images |
-| cub         | 2 hours   | 2874 images |
-| human36m    | -         | -           |
+| Dataset     | Time      | Images |
+| ----------- | --------- | ------ |
+| taichi      | 0.1 hours | 300    |
+| celeba      | 0.5 hours | 1000   |
+| deepfashion | 1 hour    | 1179   |
+| cub         | 2 hours   | 2874   |
+| human36m    | -         | 87975  |
