@@ -40,32 +40,38 @@ In practical experiments, the time consuming for optimization embedding about 20
 
 ## dataset size
 
-- celeba_aligned train: 19000 test: 1000
-- celeba_wild train: 5379 test: 283
-- cub_aligned train: 5964 test: 2874
-- cub_001 train: 29 test: 17
-- cub_002 train: 30 test: 14
-- cub_003 train: 30 test: 15
-- cub_all train: 5964 test: 2874
-- taichi train: 5000 test: 300
-- human3.6m train: 796648 test: 87975
-- unaligned_human3.6m train: 159444 test: 17615
-- deepfashion train: 10604 test: 1179
+| Dataset             | Train  | Test  |
+| ------------------- | ------ | ----- |
+| taichi              | 5000   | 300   |
+| cub_aligned         | 5964   | 2874  |
+| cub_001             | 29     | 17    |
+| cub_002             | 30     | 14    |
+| cub_003             | 30     | 15    |
+| cub_all             | 5964   | 2874  |
+| deepfashion         | 10604  | 1179  |
+| celeba_aligned      | 19000  | 1000  |
+| celeba_wild         | 5379   | 283   |
+| human3.6m           | 796648 | 87975 |
+| unaligned_human3.6m | 159444 | 17615 |
+
 
 ## Time Consuming for Precomputing keypoints
 
 The iteration depends on min(len(dataset), max_num_points).
 
-The dataset here means the training set.
+The dataset here means the	training set.
 And max_num_points is 50000.
 
 Different datasets have different sizes, so the iteration numbers may vary.
 
-- celeba: 9.3 hours / 19000 images
-- cub: 4 hours / 5964 images
-- deepfashion: 5 hours / 10604 images
-- human36m: 22 hours / 50000 images (actually 796648 images)
-- taichi: 2 hour / 5000 images
+| Dataset     | Time      | Images                                |
+| ----------- | --------- | ------------------------------------- |
+| taichi      | 2 hours   | 5000 images                           |
+| cub         | 4 hours   | 5964 images                           |
+| deepfashion | 7 hours   | 10604 images                          |
+| celeba      | 9.3 hours | 19000 images                          |
+| human36m    | 22 hours  | 50000 images (actually 796648 images) |
+
 
 ## Time Consuming for evaluating
 
@@ -73,8 +79,10 @@ The iteration is exactly on len(test dataset).
 
 So it will totally depends on the size of the test dataset.
 
-- celeba: 
-- cub: 
-- deepfashion: 
-- human36m: 
-- taichi: 452seconds / 300 images
+| Dataset     | Time      | Images      |
+| ----------- | --------- | ----------- |
+| taichi      | 0.1 hours | 300 images  |
+| celeba      | 0.5 hours | 1000 images |
+| deepfashion | 1 hour    | 1179 images |
+| cub         | 2 hours   | 2874 images |
+| human36m    | -         | -           |
